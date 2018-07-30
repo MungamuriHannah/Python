@@ -1,0 +1,18 @@
+
+3:40 PM 2/9/2017
+google App Engine Datastore
+Windows Installer
+1.Download and run the installer. If downloading from the first URL is slow, try using the second link.
+2.Click the install screen, using all default options
+3.After the installer finishes running, select Run the Installer and Finish
+4.Configure GAE found your Python 2 installation by going to Edit > Preferences and setting the path to your Python 2 installation. Most likely, it's already in the default location, but some students may find that they need to set this path explicitly.
+
+
+
+
+
+
+
+
+
+

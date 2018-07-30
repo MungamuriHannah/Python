@@ -1,0 +1,24 @@
+
+===========+++++++========
+2:28 PM 1/21/2017
+Formatting HTML in Atom 
+In case this hasn't been mentioned before, I discovered last night how to auto format HTML in Atom:
+Edit -> Lines -> Auto Indent
+=======+++++++=====
+
+==========.==================
+<html xmlns="http://www.w3.org/1999xhtml">
+<head></head>
+<body><doctype html="" public="" "-="" w3c="" dtd="" xhtml="" 1.0="" transitional="" en"="">
+
+    
+         <title> Hello world! JavaScript</title>
+    
+    
+         <script language="Javascript" type="text/javascript">
+              documen.write('Hello, world !')
+         </script>
+   
+</doctype></body>
+</html>
+

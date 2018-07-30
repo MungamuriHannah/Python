@@ -1,0 +1,479 @@
+git
+Pink USB EMteCH named TEchUse2016 F:\tech\1Hints\GIT
+
+
+
+9:52 AM 1/26/2017
+cd file path
+git init
+git status 
+git add .
+git commit -m ''My comment"
+git remote add origin remote repository github address
+    Asks for user name HannahMoses
+    Asks for password  m12e
+
+git push origin master
+==========++++++++=======
+TO CLONE REMOTE REPO INTO LOCAL GIT REPO:
+git clone path
+EXAMPLE :
+brown@DESKTOP-IK7MNGP MINGW64 /gitcode/lacu2
+$ git clone https://github.com/bgschiller/flicklist-python.git
+Cloning into 'flicklist-python'...
+remote: Counting objects: 608, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 608 (delta 0), reused 0 (delta 0), pack-reused 602
+Receiving objects: 100% (608/608), 85.34 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (374/374), done.
+
+=========++++++=============
+4:22 PM 1/9/2017 details of git installation done by me on browne laptop
+DOS commands in UNIX operating system
+$ cd C:\Users\brown\Downloads = change directory to C:\Users\brown\Downloads
+$ cd .. TO GO BACK ONE STEP IN THE PATH
+$ mkdir git = make a new directory named"git" in 'C:\Users\brown\Downloads' folder
+$ ls = list all files in the directory(C:\Users\brown\Downloads)
+$ vi Mosy.txt = open the file named "Mosy.txt" in located in the directory
+                          C:\Users\brown\Downloads
+:wq = write and quit after saving
+:q! = exit without saving
+i = insert; esc =go back to non-inserting mode
+$ vi 'file name'to open a file
+REMOTE REPO
+Fetch will not touch any of your local branches or the files in your working copy. It just downloads data from the specified remote and makes it visible for you. You can decide later if you want to integrate new changes into your local project.
+$ git fetch crash-course-remote
+From https://github.com/gittower/git-crash-course-remote
+ * [new branch]     faq-content -> crash-course-remote/faq-content
+ * [new branch]     master -> crash-course-remote/master
+
+GIt
+Desktop GUI or Command Line?
+To make learning Git as easy as possible for you, we provide this book
+in two different versions:
+
+This version teaches Git on the Command Line.
+Switch to the Desktop GUI version if you prefer a simpler, more visual
+ approach in a graphical user interface.
+What is Version Control?
+You can think of a version control system (short: "VCS") as a kind of
+ "database". It lets you save a snapshot of your complete project at any time you want. When you later take a look at an older snapshot (let's start calling it "version"), your VCS shows you exactly how it differed from the previous one.
+====+++====4:29 PM 1/9/2017+++++++========
+DOwnload Git for WIndows SDK from https://git-for-windows.github.io/
+
+git-sdk-installer-1.0.3-64.7z.exe 
+========++++++++++============
+8:18 PM 1/9/2017 details of git configuration done by me on browne laptop
+
+Shown in snipping tool photoF:\STUDY2016\git\gitdemo2017Jan9Inclass2
+
+brown@DESKTOP-IK7MNGP MINGW64 /
+$ git config --global user.name "Hannah Mungamuri"
+
+brown@DESKTOP-IK7MNGP MINGW64 /
+$
+
+
+
+========++++++++++++++++===========
+11:15 AM 1/10/2017
+LC101 Videos TOWER2 https://www.git-tower.com/learn/git/videos/what-is-version-control?channel=cli
+Every project evolves in little steps like changing a file here, make
+modifications in that file...
+V**Each of these steps is like a NEW VERSION of your project.
+With version control system like Git,we can save these versions like
+in a database.WIthout Version contro system, we have to use a folder
+for each version.
+When GIt saves a new version, Git also saves when those changes were
+made and by whom and a message that describes those changes.
+git can restore any former version, by undoing changes.
+
+With the concept of BRANCHES,GIT allows us to work on new features
+and experiments more safely.
+
+V**BRANCH CREATES A NEW CONTEXTTHAT IS SEPARATE FROM ANY OTHER CONTEXT
+IN YOUR PROJECT. It is like a copy of your project in a new folder.
+Changes to a branch will NOT AFFECT any other part of our project.
+
+GIt makes sure that the changes I make combine (not overwrite)with 
+the changes made by my coworker, even if they happen in the same file
+and provides a backup of my project on my disk.
+
+===========...........===11:20 AM 1/10/2017
+Installing & Configuring Git
+
+In windows install git with default settings
+ANd find this git bash application that we can use to work with git.
+at: http://msysgit.github.io/
+On linux, install git through package management tools.
+On fedora use yum Eg: $yum install git
+On Debian based subversions like Ubuntu, use $apt-get install git
+
+AFTER INSTALLATIONset basic configurations of my email address,name 
+Git sets my name as author for my commits to my git database,
+t 
+Start terminal app on MaC
+git  bash on windows.
+===========..............=========
+Basic workflow of version control
+
+If you start working on an already existing project, chances are that
+someone already had uploaded the project onto a remote sever.You can
+CLONE = download a copy of the project to your local machine.
+You now have a full blown version of the working project on your local
+computer. You can make changes to the files.
+
+Just because you made some changes to a file doesn't mean that it will
+automatically be in the next commit.
+
+
+ Instead, you have to explicitly decide which changes you want to include
+. To do this, you add them to the so-called "Staging Area".
+YOU HAVE TO ADD THESE CHANGES TO THE STAGING AREA.
+Now, having added some changes to the Staging Area, it's time to actually
+commit these changes. You'll have to add a short and meaningful message 
+that describes what you actually did. The commit will then be recorded in
+your local Git repository, marking a new version of your project.
+From time to time, you'll want to have a look at what happened in the 
+project - especially if you're working together with other people. The 
+"log" command lists all the commits that were saved in chronological 
+order. This allows you to see which changes were made in detail and helps you comprehend how the project evolved.
+
+You can always ask the version control system to populate your working copy with any version of your project. But you always only have one working copy with one specific version on your disk - not multiple in parallel.
+
+
+As a simple rule of thumb you'll most likely want to ignore files that were created automatically (as a "by-product"): temporary files, logs, cache files... 
+A helpful compilation of ignore rules for different projects and platforms can be found here: github.com/github/gitignore
+The list of files to ignore is kept in a simple file called ".gitignore" in the root folder of your project. It's highly recommended to define this list at the very beginning of your project - before making your first commit. Because once files are committed, you'll have to jump through some hoops to get them out of version control, again.
+
+Now, let's get going: Create an empty file in your favorite editor
+ and save it as ".gitignore" in your project's root folder.
+gnore one specific file: Provide the full path to the file, seen from the root folder of your project.
+path/to/file.ext
+Ignore all files with a certain name (anywhere in the project): Just write down the file's name, without giving a path.
+filename.ext
+Ignore all files of a certain type (anywhere in the project):
+*.ext
+Ignore all files in a certain folder:
+path/to/folder/*
+
+========++++++++++=====================
+3:07 PM 1/12/2017
+CLass2.2 LC101 Prep websites & videos
+
+When handle multiple topics in a single context,you shouldn't be bothered
+ with all the topics from all of your colleagues.
+:A tempting workaround might be to simply copy your complete project folder for each new context. But this only leaves you with other problems:
+
+You circumvent your VCS, since those new folders won't be under version control.
+Not being version controlled, you can't easily share & collaborate with others.
+branches are what we need to solve these problems. Because a
+V**BRANCH represents exactly such a context in a project and helps you keep it separate from all other contexts.
+All the changes you make at any time will only apply to the currently active branch; all other branches are left untouched
+You should use branches extensively in your development workflows: for new features, bug fixes, experiments, ideas…
+
+ in Git: you are always working on a certain branch (the currently active, or "checked out", or "HEAD" branch).
+******
+ we CREATE a NEW BRANCH and name it "contact-form":
+$ git branch contact-form
+TO LIST ALL OUR BRANCHES(-v flag provides us with more data)
+$ git branch -v
+  contact-form 3de33cc Implement the new login box
+* master       3de33cc [ahead 1] Implement the new login box
+
+You can see that our new branch "contact-form" was created and is based 
+on the same version as "master". Additionally, the little asterisk 
+character (*) next to "master" indicates that this is our current HEAD 
+branch. To emphasize this: the "git branch" command only created that
+ new branch - but it didn't make it active. Before checking out that new
+ branch, it's a good idea to have another look at "git status" to see 
+where we currently are:
+
+$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working 
+#    directory)
+#
+#       modified:   imprint.html
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ we still have some changes in "imprint.html" in our working copy! Actually, we just wanted to start working on our new "contact-form" branch; but these changes don't belong to this feature. So what do we do with them? One way to get this work-in-progress out of the way would be to simply commit it. But committing half-done work is a bad habit.
+>>Stash split the feature’s implementation into logical chunks and remember to commit early and often. But don’t commit just to get half-done work out of your way when you need a "clean working copy". For these cases, consider using Git’s “Stash” feature instead.
+Stash is not bound to the branch where you created it: when you restore it, the changes will be applied to your current HEAD branch, whichever this may be.
+
+$ git stash
+Saved working directory and index state WIP on master: 
+   2dfe283 Implement the new login box
+HEAD is now at 2dfe283 Implement the new login box
+
+$ git status
+# On branch master
+nothing to commit (working directory clean)
+
+The local changes in "imprint.html" are now safely stored on a clipboard, ready to be restored any time we want to continue working on them.
+You can easily get an overview of your current Stashes:
+
+$ git stash list
+stash@{0}: WIP on master: 2d6e283 Implement the new login box
+The newest Stash will always be at the top of the list, named "stash@{0}". Older Stashes have higher numbers.
+
+========..........=========
+Checking Out a Local Branch
+
+Now that we have a clean working copy, the first thing we have to do is switch to (or "check out") our newly created branch:
+
+$ git checkout contact-form
+CONCEPT
+Checkout, HEAD, and Your Working Copy
+
+A branch automatically points to the latest commit in that context. And since a commit references a certain version of your project, Git always knows exactly which files belong to that branch.
+
+
+At each point in time, only one branch can be HEAD / checked out / active. The files in your working copy are those that are associated with this exact branch. All other branches (and their associated files) are safely stored in Git's database.
+
+To make another branch (say, "contact-form") active, the "git checkout" command is used. This does two things for you:
+
+(a) It makes "contact-form" the current HEAD branch.
+(b) It replaces the files in your working directory to match exactly the revision that "contact-form" is at.
+Running "git status" once more, you'll see that we're now "On branch contact-form". From now on, all of our changes and commits will only impact this very context - until we switch it again by using the "checkout" command to make a different branch active.
+
+Let's prove this by creating a new file called "contact.html" and committing it:
+
+$ git add contact.html
+$ git commit -m "Add new contact form page"
+$ git log
+commit 56eddd14cf034f4bcb8dc9cbf847b33309fa5180
+Author: Tobias Günther <support@learn-git.com>
+Date: Fri Jul 26 10:56:16 2013 +0200
+
+    Add new contact form page
+
+commit 2dfe283e6c81ca48d6edc1574b1f2d4d84ae7f1
+Author: Tobias Günther <support@learn-git.com>
+Date: Fri Jul 26 10:52:04 2013 +0200
+
+    Implement the new login box
+
+commit 2b504bee4083a20e0ef1e037eea0bd913a4d56b6
+Author: Tobias Günther <support@learn-git.com>
+Date: Fri Jul 26 10:05:48 2013 +0200
+
+    Change headlines for about and imprint
+Looking at the Log, you'll see that your new commit was properly saved. No big surprises, so far. But now let's switch back to "master" and have a look at the Log once more:
+
+$ git checkout master
+$ git log
+commit 2dfe283e6c81ca48d6edc1574b1f2d4d84ae7f1
+Author: Tobias Günther <support@learn-git.com>
+Date: Fri Jul 26 10:52:04 2013 +0200
+
+    Implement the new login box
+
+commit 2b504bee4083a20e0ef1e037eea0bd913a4d56b6
+Author: Tobias Günther <support@learn-git.com>
+Date: Fri Jul 26 10:05:48 2013 +0200
+
+    Change headlines for about and imprint
+You'll find that the "Add new contact form page" commit isn't there - because we made it in the context of our HEAD branch (which was the "contact-form" branch, not the "master" branch). This is exactly what we wanted: our changes are kept in their own context, separated from other contexts.
+======...........============
+Merging Changes
+
+Keeping your commits in the separate context of a branch is a huge help. But there will come a time when you want to integrate changes from one branch into another. For example when you finished developing a feature and want to integrate it into your "production" branch. Or maybe the other way around: you're not yet finished working on your feature, but so many things have happened in the rest of the project in the meantime that you want to integrate these back into your feature branch.
+
+Whatever the scenario may be: such an integration is called "merging" and is done with the "git merge" command.
+
+CONCEPT
+Integrating Branches - Not Individual Commits
+
+When starting a merge, you don't have to (and cannot) pick individual commits that shall be integrated. Instead, you tell Git which branch you want to integrate - and Git will figure out which commits you don't have in your current working branch. Only these commits will then be integrated as a result. 
+
+Also, you never have to think long and hard about where these changes end up: The target of such an integration is always your current HEAD branch and, thereby, your working copy. 
+
+
+In Git, performing a merge is easy as pie. It requires just two steps:
+
+(1) Check out the branch that should receive the changes.
+(2) Call the "git merge" command with the name of the branch that contains the desired changes.
+Let's integrate the changes from our "contact-form" branch into "master":
+
+$ git checkout master
+$ git merge contact-form
+When you now perform a "git log" command, you'll see that our "Add new contact form page" commit was successfully integrated into master!
+
+$ git log
+commit 56eddd14cf034f4bcb8dc9cbf847b33309fa5180
+Author: Tobias Günther <support@learn-git.com>
+Date: Fri Jul 26 10:56:16 2013 +0200
+
+    Add new contact form page
+
+commit 2dfe283e6c81ca48d6edc1574b1f2d4d84ae7f1
+Author: Tobias Günther <support@learn-git.com>
+Date: Fri Jul 26 10:52:04 2013 +0200
+
+    Implement the new login box
+
+commit 2b504bee4083a20e0ef1e037eea0bd913a4d56b6
+Author: Tobias Günther <support@learn-git.com>
+Date: Fri Jul 26 10:05:48 2013 +0200
+
+    Change headlines for about and imprint
+However, the result of a merge action can't always be displayed that clearly: not always can Git simply add the missing commits on top of the HEAD branch. Often, it will have to combine changes in a new, separate commit called a "merge commit". Think of it like a knot that connects two branches.
+
+
+You can merge one branch into another as often as you like. Git will again figure out which changes haven't been merged and only consider these.
+
+CROSS REFERENCE
+In some situations, merging will result in one or more "merge conflicts". In such a case, Git wasn't able to combine changes, e.g. because the exact same line was modified in two different ways. You'll then have to decide yourself which content you want. We'll talk about dealing with merge conflicts in detail later in this book.
+========...........===3:34 PM 1/12/2017
+Branching Workflows
+
+Depending on how they're used, you can divide branches into two major groups.
+
+NOTE
+Please keep in mind, though, that this is just a semantic division. Technically (and practically), a branch is just a branch and always works in the same way.
+(A) Short-Lived / Topic Branches
+
+Earlier in this book, you've already read my advice to be generous about creating branches for new features, bug fixes, and experiments. Branches for these kinds of things share two important characteristics:
+
+They are about a single topic and are used to isolate code belonging to this topic from any other code. You shouldn't create a "shopping-cart" branch to then also commit code dealing with newsletter signup or bug #341 to it.
+They typically have a rather short lifespan, usually only until you've finished working on the topic (i.e. when the bug is fixed, the feature is complete...). Then, the branch will be integrated into the broader context of your project and can be deleted.
+
+
+
+(B) Long-Running Branches
+
+Other branches are used on a higher level, independent of a single feature or bugfix development. They represent states in your project lifecycle - like a "production", "testing", or "development" state - and remain in your project for a longer time (or even all the time). Typically, a couple of rules apply to this kind of branches:
+
+You shouldn't work on them directly. Instead, you integrate other branches (possibly feature branches or other long-running branches) into them, but rarely add commits directly to them.
+Often, long-running branches have a hierarchy between them: e.g. "master" is used as the highest-order branch. It should only contain production code. Subordinate to it exists a "development" branch. It's used to test developed features and is then integrated into "master"...
+Which long-running branches should be created and how they should be used can't be generalized. This depends a lot on the team (its size and style of development) and the requirements of the project (and possibly also the customer). Clear rules must exist and be agreed on by everybody in the team.
+
+A Very Simple Branching Strategy
+
+As already said, each team must find its own branching strategy. However, we'll look at a very simple workflow that should fit for a lot of teams.
+
+One Long-Running Branch Only
+Although you could of course introduce multiple long-running branches, there are a couple of reasons against this: most notably, it complicates things! Having only a single long-running branch in your workflow keeps things as simple as possible.
+
+CONCEPT
+In such a scenario, the "master" branch effectively represents your production code. This has one important consequence: everything that gets merged into "master" must be stable! It must be tested, reviewed, and approved by whatever methods else you have to assure quality. 
+
+This also means that no work should happen directly on "master" (which is also a very common rule). Therefore, if you should find yourself typing "git checkout master", followed by "git commit", you should ask yourself if you're doing the right thing...
+Topic Branches
+Every time you start working on a new feature or bugfix, you should create a new branch for this topic. This is a common practice in almost all branching workflows and should become a habit for you, too.
+
+As you only have a single long-running branch in your repository, all new topic branches are based off of this "master" branch. And when your work is done in this topic, of course, it should be merged back into "master".
+
+In the meantime, it might be that new code gets integrated into "master" by your teammates while you're still working on your feature. It's both recommended and simple to merge new stuff often from master into your development branch. This ensures that you're staying up-to-date - and thereby reduces the risk of merge conflicts that come with large integrations.
+
+Don't forget the golden rule that comes with such a simple workflow: code that gets integrated into "master" must be stable! How you ensure this is up to you and your team: use unit tests, code reviews, etc.
+
+Keep the Remote in Sync
+In Git, remote and local branches can be completely independent from each other. However, it makes great sense to regard local and remote branches as counterparts of each other.
+
+This doesn't mean that you need to publish each of your local branches: it can still make perfect sense to keep some of your branches private, e.g. when you're doing experimental stuff that you're working on alone.
+However, if you do publish a local branch, you should name its remote counterpart branch the same. If you have a local branch named "login-ui", you should also name it "login-ui" when you push it to your remote repository.
+
+Push Often
+Keeping the remote in sync doesn't stop with the structure: publishing your work often via "git push" makes sure that everybody has always access to the latest developments. And, as a bonus, it can serve as your remote backup.
+
+Other Branching Strategies
+
+The above strategy is best suited for small, agile teams. Especially larger teams might need more rules and more structures.
+Searching the web for other teams' strategies will present you with many interesting alternatives. One particular workflow that might be worth a look is the popular "git-flow".
+
+NOTE
+In my personal opinion, git-flow is a bit too heavy of a component:
+
+It comes with its own script that introduces a layer on top of Git and its commands. This makes it hard to use from a GUI application.
+It comes with the noble endeavour to simplify Git - however, it thereby forces the user to learn almost a meta-language with new commands.
+
+You might find that properly learning the Git basics and agreeing on a common workflow in a team will make "supplements" like git-flow superfluous.
+==========............=======3:34 PM 1/12/2017
+5:10 PM 2/4/2017
+I can fork the repo naemd flicklist-python from  LCeducation's git hub onto my git hub as 
+Hannah?flicklist-python, instead of  searching for LCeducation/flicklist-python in github URL.
+
+If I toggle the switch in advanced settings to 'show hidden files', I'll be able to view the hidden
+.git folder.
+
+==========++++++===========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
