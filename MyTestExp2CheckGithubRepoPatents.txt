@@ -1,0 +1,304 @@
+
+
+10:49 AM 7/30/2018
+
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ dir
+1BrowserJavaScriptLC101Unit3DOT2.txt  frontend       MyPHP
+1JavaScriptLC101Unit3DOT2.txt         gmail_project  myshop2
+1lessImpgitcode                       JS2017         proj1
+1USEthis2017Oct25                     JSstudios      proj2
+CrochetBee                            LC101          Resource\ Material
+fitgrit                               MyGit          SpellBee1
+fitgritExpt                           MyJS           webtip1
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode
+$ cd 1USEthis2017Oct25
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25
+$ dir
+1aHowTO  2myExptpythonJSgmailAPI    goodmed    spellingbee
+1HowTO   balletclassstu             gymtime    sqlmail
+2HOWto   bluecutebirdDOTpyanywhere  merrymail
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25
+$ cd 1aHowTO
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO
+$ dir
+Git1Jan2017.txt  GoogleAppEngineDatastore1.txt  htmlJavaScriptCSS  Python
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO
+$ cd Python
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python
+$ dir
+AcerDownloads.txt
+compilingDOTpyFilesUsingPython3CMD.txt
+ILLustrations
+LC101Unit2DOT2.txt
+whatIsKeyBindingResolverDoesPressingcntrlMINUSplusMakeItOpenUp.JPG
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python
+$ git init
+Initialized empty Git repository in C:/Users/cody/Downloads/Git/gitcode/1USEthis2017Oct25/1aHowTO/Python/.git/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        AcerDownloads.txt
+        ILLustrations/
+        LC101Unit2DOT2.txt
+        compilingDOTpyFilesUsingPython3CMD.txt
+        whatIsKeyBindingResolverDoesPressingcntrlMINUSplusMakeItOpenUp.JPG
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python (master)
+$ git add .
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python (master)
+$ git commit -m "initial commit2018Jul30 1aHowTO"
+[master (root-commit) 119f37e] initial commit2018Jul30 1aHowTO
+ 7 files changed, 422 insertions(+)
+ create mode 100644 AcerDownloads.txt
+ create mode 100644 ILLustrations/FractionCLassDepiction.JPG
+ create mode 100644 ILLustrations/HowToRunDOTpyFilesInAtomFromCMDcommandPrompt.JPG
+ create mode 100644 ILLustrations/classCodeLensDepiction.JPG
+ create mode 100644 LC101Unit2DOT2.txt
+ create mode 100644 compilingDOTpyFilesUsingPython3CMD.txt
+ create mode 100644 whatIsKeyBindingResolverDoesPressingcntrlMINUSplusMakeItOpenUp.JPG
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python (master)
+$ git remote add origin git@github.com:MungamuriHannah/Python.git
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python (master)
+$ git push origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO/Python (master)
+$ cd ..
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO
+$ git init
+Initialized empty Git repository in C:/Users/cody/Downloads/Git/gitcode/1USEthis2017Oct25/1aHowTO/.git/
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Git1Jan2017.txt
+        GoogleAppEngineDatastore1.txt
+        Python/
+        htmlJavaScriptCSS/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git add .
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git commit -m "Initial commit4m300ATwustlEDU"
+[master (root-commit) 561cdd4] Initial commit4m300ATwustlEDU
+ 9 files changed, 522 insertions(+)
+ create mode 100644 Git1Jan2017.txt
+ create mode 100644 GoogleAppEngineDatastore1.txt
+ create mode 160000 Python
+ create mode 100644 htmlJavaScriptCSS/1executemarioJS.PNG
+ create mode 100644 htmlJavaScriptCSS/HideHello.txt
+ create mode 100644 htmlJavaScriptCSS/marioDOThtmlOpenedInBrowser.PNG
+ create mode 100644 htmlJavaScriptCSS/nodesJscript/2017Mar15QueryDetailOfNodeInJavaScript.PNG
+ create mode 100644 htmlJavaScriptCSS/nodesJscript/2017Mar15StoredLC101Unit3.2CodeInHTMLfileAndOpenedItInBrowser.PNG
+ create mode 100644 htmlJavaScriptCSS/openedmarioDOThtmlFileIn a Browser.PNG
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git remote ass origin https://github.com/MungamuriHannah/Python.git
+error: Unknown subcommand: ass
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git remote add origin https://github.com/MungamuriHannah/Python.git
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git push origin master
+fatal: AggregateException encountered.
+   One or more errors occurred.
+Username for 'https://github.com': mungamuri300@wustl.edu
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.76 MiB | 371.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0)
+To https://github.com/MungamuriHannah/Python.git
+ * [new branch]      master -> master
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git branch -va
+* master                561cdd4 Initial commit4m300ATwustlEDU
+  remotes/origin/master 561cdd4 Initial commit4m300ATwustlEDU
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Misc1aHowTO/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git add .
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git commit -m "MyGitWork.txt"
+[master c6a5176] MyGitWork.txt
+ 1 file changed, 194 insertions(+)
+ create mode 100644 Misc1aHowTO/MyGitWorkBranchingBee2018B.txt
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git push --set-upstream origin master
+fatal: AggregateException encountered.
+   One or more errors occurred.
+Username for 'https://github.com': mungamuri300@wustl.com
+error: unable to read askpass response from 'C:/Users/cody/Downloads/Git/mingw64/libexec/git-core/git-gui--askpass'
+Password for 'https://mungamuri300@wustl.com@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/MungamuriHannah/Python.git/'
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git push --set-upstream origin master
+fatal: AggregateException encountered.
+   One or more errors occurred.
+Username for 'https://github.com': mungamuri300@wustl.edu
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.22 KiB | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MungamuriHannah/Python.git
+   561cdd4..c6a5176  master -> master
+Branch master set up to track remote branch master from origin.
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Misc1aHowTO/MyGitWork4Pythonm300WUSTLedu.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git add .
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git commit -m "SameFIleDiffname2CheckPatentRights"
+[master 0cfc236] SameFIleDiffname2CheckPatentRights
+ 1 file changed, 194 insertions(+)
+ create mode 100644 Misc1aHowTO/MyGitWork4Pythonm300WUSTLedu.txt
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$ git push
+fatal: AggregateException encountered.
+   One or more errors occurred.
+Username for 'https://github.com': mungamuri300@wustl.edu
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 368 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MungamuriHannah/Python.git
+   c6a5176..0cfc236  master -> master
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/1aHowTO (master)
+$
+
+
